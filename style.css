@@ -16,25 +16,33 @@
 
 h1 {
   text-align: center;
+  color: white;
 }
 
 textarea {
   margin: 0.5rem 0rem;
   border-radius: 1rem;
   padding: 1rem;
-  border: 1px solid black;
+  border: 2px solid white;
+  color: white;
+  background-color: steelblue;
 }
 
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/547/315/646/movies-sam-worthington-avatar-jake-sully-wallpaper-preview.jpg");
+  background-size: cover;
 }
-
 footer {
   text-align: center;
   padding-top: 1rem;
   padding-left: 3rem;
   padding-right: 3rem;
+  margin-bottom: 0;
+  background-color: #b57f65;
+  padding-bottom: 2rem;
+  border-radius: 0 1rem;
 }
 
 .footer-header {
@@ -42,11 +50,16 @@ footer {
 }
 
 .fab {
-  font-size: 2rem;
+  font-size: 3rem;
+  color: #b57f65;
 }
 
 .icon {
   text-align: right;
   padding-top: 0.8rem;
   padding-right: 1rem;
+}
+
+textarea::placeholder {
+  color: white;
 }
