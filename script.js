@@ -4,8 +4,13 @@ const input = document.querySelector("#input-box");
 
 translateBtn.addEventListener("click", function () {
   let str = input.value;
-  let url = `	https://api.funtranslations.com/translate/navi.json?text=${str}`;
-  getTranslation(url);
+  if(str) {
+    let url = `	https://api.funtranslations.com/translate/navi.json?text=${str}`;
+    getTranslation(url);
+  }else {
+    alert('please input text');
+  }
+  
 });
 
 function getTranslation(url) {
